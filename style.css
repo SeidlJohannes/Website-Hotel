@@ -1,0 +1,275 @@
+body {
+  background-color: #1f1f1f;
+  overflow-x: hidden;
+  overflow-y: scroll !important;
+}
+h1 {
+  color: gold;
+  font-family: Bell MT;
+  text-align: center;
+  font-size: 200%;
+}
+h2 {
+  color: white;
+  font-family: Bell MT;
+  text-align: center;
+  font-size: 150%;
+}
+a {
+  color: white;
+  text-decoration-color: gold;
+}
+.center {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.topSpace {
+  margin-top: 20px;
+}
+.margin50 {
+  margin-left: 50%;
+  margin-bottom: 10px;
+}
+.rounded-corners {
+  border-radius: 10px 10px 10px 10px;
+  max-height: 50%;
+  max-width: 75%;
+}
+.reservFontRight {
+  color: white;
+  text-align: left;
+  font-family: Bell MT;
+  font-size: 150%;
+}
+.profilFontLeft {
+  color: gold;
+  text-align: right;
+  font-family: Bell MT;
+  font-size: 150%;
+}
+.profilFontRight {
+  color: gold;
+  text-align: left;
+  font-family: Bell MT;
+  font-size: 150%;
+}
+.profilColumn {
+  float: left;
+  width: 50%; /*Bestimmt Anzahl der Spalten*/
+  padding: 10px;
+}
+.plain-text {
+  color: white;
+  font-size: 100%;
+}
+.centered-text {
+  color: white;
+  text-align: center;
+}
+.centered-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.page-center {
+  margin: auto;
+  width: 50%;
+  padding-top: 250px;
+  /*border: 3px solid aqua;*/
+}
+button {
+  background-color: gold;
+  color: black;
+  padding: 14px 20px;
+  border-color: black;
+  border-radius: 5%;
+  border: none;
+  cursor: pointer;
+  width: 200px;
+}
+button:hover {
+  opacity: 0.8;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  padding: 6px;
+  margin-bottom: 12px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.fullLength {
+  width: 100%;
+}
+.halfLength {
+  width: 50%;
+}
+select {
+  width: 100%;
+  padding: 6px;
+  margin-bottom: 12px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.deletebtn {
+  background-color: #f44336;
+}
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0; /*Reihenfolge bei margin: top, right, bottom, left*/
+  position: relative;
+}
+img.avatar {
+  width: 30%;
+  border-radius: 50%;
+}
+.grayContainer {
+  margin-top: 4px;
+  padding: 12px; /*Abstand von Content zu Elementgrenze*/
+  color: white;
+  background-color: gray;
+}
+span.psw {
+  padding-top: 8px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Anfangs nicht sichtbar */
+  /*position: fixed;  Bewegt sich nicht */
+  /*overflow: auto; Modal ist scrollbar -> Lösung für große Formate */
+  padding-top: 60px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centers modal */
+  max-width: 750px;
+  max-height: 1000px;
+}
+
+body.modal-open {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #343a40;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid black;
+  width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) of the modals*/
+.close {
+  position: absolute;
+  right: 25px;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Dropdown Button = button{} */
+.dropbtn {
+  background-color: silver;
+  color: black;
+  padding: 14px 20px;
+  border-color: black;
+  border-radius: 5%;
+  cursor: pointer;
+  width: 200px;
+  margin-top: 5px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #1f1f1f;
+  min-width: 150px;
+  z-index: 1;
+}
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* HIDE RADIO [type=radio] */
+.hide-radio {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* IMAGE STYLES */
+[type="radio"] + img {
+  cursor: pointer;
+}
+
+/* CHECKED STYLES */
+[type="radio"]:checked + img {
+  outline: 2px solid gold;
+}
+
+/** sveta for users.php**/
+#usersdaten {
+  height: fit-content;
+}
+.action-form {
+  display: inline-block;
+}
+.button-edit,
+.button-status {
+  position: relative;
+  height: 30px;
+  width: 30px;
+  padding: 0;
+  border: none;
+}
+
+/*add Icons to button*/
+.button-edit::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 30px;
+  width: 30px;
+  background-image: url(images/pencil.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: "";
+}
+.divright {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+/* _______________________________________________________________DELETE ACCOUNT MODAL_______________________________________________________________ */
+.cancelbtn {
+  background-color: #ccc;
+  color: black;
+  width: fit-content;
+}
+
+/* Add a color to the delete button */
+.deletebtn {
+  background-color: #f44336;
+  width: fit-content;
+  float: right;
+}
